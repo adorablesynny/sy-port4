@@ -1,0 +1,717 @@
+.big-desc{
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+    margin-top:-30px;
+    padding:0 0 30px 0;
+}
+.big-desc span{
+    font-family:var(--korean);
+    font-size:17px;
+    line-height:30px;
+}
+/* 비주얼 영역 */
+#visual-wrap{
+    width:100%;
+    height:650px;
+    position: relative;
+}
+#visual-wrap p{
+    position: absolute;
+    top:160px;
+    left:15%;
+    font-size:18px;
+    z-index:2;
+    color:#fff;
+    text-align:center;
+    line-height:30px;
+    transform:translateX(-50px);
+    opacity:0;
+    font-family:var(--korean);
+    transition:all .5s;
+}
+#visual-wrap p.textin{
+    animation:visual-textin .5s ease-in forwards;
+}
+#visual-wrap p.textout{
+    animation:visual-textout .5s ease-in forwards;
+}
+
+@keyframes visual-textin{
+    from{
+        transform:translateX(-50px);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes visual-textout{
+    from{
+        transform:translateX(0px);
+        opacity:1;
+    }
+    to{
+        transform:translateX(-50px);
+        opacity:0;
+    }
+}
+#visual-wrap p span{
+    display: block;
+    font-weight:bold;
+    font-size:20px;
+    padding:10px 30px;
+    border-radius:10px 0 10px 0;
+    margin-bottom:30px;
+    background-color: var(--maincolor);
+    border:4px solid var(--maincolor);
+    box-shadow:0px 0px 5px rgba(0,0,0,0.7);
+    outline:1px solid rgba(255,255,255,0.6);
+    transition:all .5s;
+}
+#visual-wrap p span:hover{
+    transform:scale(1.1);
+}
+#visual-wrap p em{
+    display: block;
+    padding:0 0 15px 0;
+    font-size:19px;
+    font-weight:700;
+}
+#visual-wrap p em:last-child{
+    padding:30px 0 0 0;
+    font-weight:normal;
+    font-size:16px;
+    font-family:var(--english);
+    letter-spacing:10px;
+}
+#visual-wrap .main-visual div{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+#visual-wrap .main-visual .visual-img{
+    background: url("../img/visual.jpg") no-repeat center top -50px;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+/* 동물병원 정보 */
+#info-wrap{
+    width:100%;
+    height:400px;
+    background-color: var(--maincolor);
+    margin-top:5px;
+    padding:0 15%;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:row;
+}
+#info-wrap .info-left{
+    width:70%;
+    height:100%;
+    overflow:hidden;
+}
+#info-wrap .info-left > .decoimg{
+    width:40%;
+    height:100%;
+    float:left;
+    background:url("../img/bori.png") no-repeat center top;
+    background-size: 80%;
+    transition:all .5s;
+}
+#info-wrap .info-left > .decoimg:hover{
+    transform:scale(1.2);
+}
+#info-wrap .info-left .infos{
+    float:left;
+    width:50%;
+    padding:20px 50px;
+    height:100%;
+    box-sizing:border-box;
+}
+#info-wrap .info-left .infos .tel p{
+    font-size:50px;
+    font-weight:600;
+    color:#fff;
+    font-family:var(--english);
+    text-align:center;
+    text-shadow:0px 0px 3px rgba(0,0,0);
+    font-family:var(--korean);
+}
+#info-wrap .info-left .infos .kakaotalk p{
+    background-color: #fff;
+    border-radius:40px;
+    padding:10px 20px;
+    color:var(--maincolor);
+    font-size:20px;
+    font-family:var(--english);
+    font-weight:bold;
+    text-align:center;
+    letter-spacing:3px;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.4);
+}
+#info-wrap .info-left .infos .day p, #info-wrap .info-left .infos .night p{
+    display: block;
+    color:#fff;
+    font-size:18px;
+    padding:0 0 0 40px;
+    margin:30px 0 0 20px;
+    background: url("../img/paw3.png") no-repeat;
+    background-size:6%;
+    line-height:23px;
+    font-family:var(--korean);
+}
+#info-wrap .info-left .infos em{
+    display: inline-block;
+    background-color: rgba(253, 241, 127,0);
+    border-radius:5px;
+    padding:1px 5px;
+    color:var(--black);
+    transition:all .4s;
+    color:#fff;
+}
+#info-wrap .info-left.color .infos em{
+    background-color: rgba(253, 241, 127,1);
+    color:#000;
+}
+#info-wrap .info-left .infos span{
+    display: inline-block;
+    color:#fff;
+    font-size:15px;
+    padding:38px 0 0 0;
+    font-family:var(--korean);
+}
+
+#info-wrap .info-right{
+    width:30%;
+    height:100%;
+    border-right:2px solid #fff;
+    border-left:2px solid #fff;
+    box-sizing:border-box;
+}
+#info-wrap .info-right ul li{
+    display: block;
+    float:left;
+    width:50%;
+    height:199px;
+    box-sizing:border-box;
+    text-align:center;
+    position: relative;
+}
+#info-wrap .info-right ul li:first-child{
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+#info-wrap .info-right ul li:nth-child(2){
+    border-bottom: 1px solid #fff;
+}
+#info-wrap .info-right ul li:nth-child(3){
+    border-right: 1px solid #fff;
+}
+#info-wrap .info-right ul li a{
+    display: block;
+    width:100%;
+    height:100%;
+    color:#fff;
+    font-size:20px;
+    transition:all .5s;
+    font-family:var(--korean);
+}
+#info-wrap .info-right ul li a i{
+    font-size:70px;
+    display: block;
+    padding:50px 0 20px 0;
+}
+#info-wrap .info-right ul li a:hover{
+    text-shadow:0px 0px 5px var(--black);
+}
+
+/* 동물병원 안내 */
+#hospital-wrap{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    padding: 70px 13%;
+    box-sizing:border-box;
+}
+#hospital-wrap.boxin .hospital-left .hospital1{
+    transform: translateX(0);
+    opacity:1;
+}
+#hospital-wrap.boxin .hospital-left .hospital2,
+#hospital-wrap.boxin .hospital-left .hospital3{
+    transform: translateY(0);
+    opacity:1;
+}
+#hospital-wrap.boxin .hospital-right .hospital4,
+#hospital-wrap.boxin .hospital-right .hospital5{
+    transform: translateY(0);
+    opacity:1;
+}
+#hospital-wrap.boxin .hospital-right .hospital6{
+    transform: translateX(0);
+    opacity:1;
+}
+#hospital-wrap a:hover{
+    color:var(--black);
+}
+#hospital-wrap .hospital-left{
+    float:left;
+    width:50%;
+    height:auto;
+}
+#hospital-wrap .hospital-left > div{
+    padding:30px;
+    box-sizing:border-box;
+    overflow:hidden;
+    position: relative;
+}
+#hospital-wrap .hospital-left > div:before, 
+#hospital-wrap .hospital-left > div:after{
+    content:"";
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    width:100px;
+    height:55px;
+    border-radius:50%;
+    transform:scale(0);
+}
+#hospital-wrap .hospital-right > div:before, 
+#hospital-wrap .hospital-right > div:after{
+    content:"";
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    width:100px;
+    height:55px;
+    border-radius:50%;
+    transform:scale(0);
+}
+#hospital-wrap .hospital-left > div:before, 
+#hospital-wrap .hospital-right > div:before{
+    background-color: rgba(255,255,255,0.5);
+    transition: all .5s;
+}
+#hospital-wrap .hospital-left > div:after, 
+#hospital-wrap .hospital-right > div:after{
+    background-color: rgb(119, 168, 233,0.5);
+    transition: all .5s .2s;
+}
+#hospital-wrap .hospital-left > div:hover:after, 
+#hospital-wrap .hospital-left > div:hover:before,
+#hospital-wrap .hospital-right > div:hover:after, 
+#hospital-wrap .hospital-right > div:hover:before{
+    transform:scale(20.5);
+}
+#hospital-wrap .hospital-left > div > a{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    position: relative;
+    z-index:9;
+    font-size:16px;
+    font-family:var(--korean);
+    transition:font-size .5s .2s;
+}
+#hospital-wrap .hospital-left .hospital1{
+    width:100%;
+    height:500px;
+    background: url("../img/hospital.jpg") no-repeat left bottom / cover;
+    border-radius:20px 0 0 0;
+    transform:translateX(-60px);
+    opacity:0;
+    transition:transform .3s, opacity .3s;
+}
+#hospital-wrap .hospital-left .hospital2, 
+#hospital-wrap .hospital-left .hospital3{
+    float:left;
+    width:50%;
+    height:250px;
+}
+#hospital-wrap .hospital-left .hospital2{
+    background-color: rgb(245, 219, 75);
+    transform:translateY(40px);
+    opacity:0;
+    transition:transform .3s 0.2s, opacity .3s 0.2s;
+    border-radius:0 0 0 20px;
+}
+#hospital-wrap .hospital-left .hospital2 img{
+    display: block;
+    width:80px;
+    height:80px;
+    position: absolute;
+    right:30px;
+    bottom:30px;
+}
+#hospital-wrap .hospital-left .hospital3{
+    background: url("../img/hospital3.png") no-repeat center bottom;
+    background-size: cover;
+    transform:translateY(40px);
+    opacity:0;
+    background-color: #000;
+    transition:transform .3s 0.4s, opacity .3s 0.4s;
+}
+
+#hospital-wrap .hospital-right{
+    float:left;
+    width:50%;
+    font-family:var(--korean);
+}
+#hospital-wrap .hospital-right > div{
+    padding:30px;
+    box-sizing:border-box;
+    overflow:hidden;
+    position: relative;
+}
+#hospital-wrap .hospital-right > div > a{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    font-size:16px;
+    font-family:var(--korean);
+    transition:font-size .5s .2s;
+    position: relative;
+    z-index:9;
+}
+#hospital-wrap .hospital-right .hospital4, #hospital-wrap .hospital-right .hospital5{
+    float:left;
+    width:50%;
+    height:250px;
+}
+#hospital-wrap .hospital-right .hospital4{
+    background-color: var(--maincolor);
+    box-sizing:border-box;
+    transform:translateY(-40px);
+    opacity:0;
+    transition:transform .3s 0.6s, opacity .3s 0.6s;
+}
+#hospital-wrap .hospital-right .hospital4 img{
+    width:80px;
+    height:auto;
+    position: absolute;
+    right:30px;
+    bottom:30px;
+}
+#hospital-wrap .hospital-right .hospital5{
+    background: url("../img/hospital4.png") no-repeat center bottom;
+    background-size: cover;
+    border-radius:0 20px 0 0;
+    transform:translateY(-40px);
+    opacity:0;
+    transition:transform .3s 0.8s, opacity .3s 0.8s;
+}
+#hospital-wrap .hospital-right .hospital6{
+    float:left;
+    width:100%;
+    height:500px;
+    background: url("../img/hospital5.png") no-repeat center bottom;
+    background-size: cover;
+    border-radius:0 0 20px 0;
+    transform:translateX(60px);
+    opacity:0;
+    transition:transform .3s 1s, opacity .3s 1s;
+}
+
+#hospital-wrap .hospital-left strong, #hospital-wrap .hospital-right strong{
+    font-size:22px;
+    font-family:var(--korean);
+    font-weight:500;
+    transition:all .5s .2s;
+}
+#hospital-wrap .hospital-left > div:hover a, #hospital-wrap .hospital-right > div:hover a{
+    font-size:18px;
+}
+#hospital-wrap .hospital-left > div:hover strong, #hospital-wrap .hospital-right > div:hover strong{
+    font-size:23px;
+    font-weight:bold;
+}
+
+
+/* 진료 안내 */
+#check-wrap{
+    width:100%;
+    padding: 70px 13%;
+    box-sizing:border-box;
+    background-color: #fcf8eb;
+}
+#check-wrap .check-list{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    height: auto;
+}
+#check-wrap .check-list.boxdown > div {
+    transform:translateY(0);
+    opacity:1;
+}
+#check-wrap .check-list > div{
+    width: 25%;
+    height:auto;
+    border:2px solid var(--maincolor);
+    border-radius: 10px;
+    margin:0 1% 0 0;
+    padding:28px;
+    background-color: #fff;
+    position: relative;
+    transition:all .6s;
+    transform:translateY(-50px);
+    opacity:0;
+}
+#check-wrap .check-list > div:first-child{ transition-duration:0.1s; }
+#check-wrap .check-list > div:nth-child(2){ transition-duration:0.4s; }
+#check-wrap .check-list > div:nth-child(3){ transition-duration:0.7s; }
+#check-wrap .check-list > div:nth-child(4){ transition-duration:1s; }
+#check-wrap .check-list > div:last-child{
+    transition-duration:1.3s;
+    margin:0;
+}
+#check-wrap .check-list > div > p{
+    display: inline-block;
+    font-family:var(--korean);
+    font-size:18px;
+    font-weight: 500;
+    color:var(--maincolor);
+}
+#check-wrap .check-list > div > div.check-photo{
+    width:130px;
+    height:130px;
+    box-shadow:inset 0px 0px 5px rgba(0,0,0,0.6);
+    border-radius:50%;
+    margin:33px auto;
+}
+#check-wrap .check-list > div:first-child > div.check-photo{
+    background: url("../img/check1.png") no-repeat center center;
+    background-size: cover;
+}
+#check-wrap .check-list > div:nth-child(2) > div.check-photo{
+    background: url("../img/check2.jpg") no-repeat center left -40px;
+    background-size: 220%;
+}
+#check-wrap .check-list > div:nth-child(3) > div.check-photo{
+    background: url("../img/check3.jpg") no-repeat left -70px top -120px;
+    background-size: 300%;
+}
+#check-wrap .check-list > div:nth-child(4) > div.check-photo{
+    background: url("../img/check4.jpg") no-repeat center center;
+    background-size: cover;
+}
+#check-wrap .check-list > div:last-child > div.check-photo{
+    background: url("../img/check5.jpg") no-repeat center center;
+    background-size: cover;
+}
+#check-wrap .check-list > div > span{
+    display: inline-block;
+    width:100%;
+    height:auto;
+    font-family:var(--korean);
+    font-size:16px;
+    line-height:29px;
+    padding:0 0 30px 0;
+}
+#check-wrap .check-list > div > span em{
+    color:var(--maincolor);
+    font-weight:600;
+}
+#check-wrap .check-list > div > a{
+    padding:5px 15px;
+    border:2px solid var(--maincolor);
+    border-radius:30px;
+    background-color: #fff;
+    color:var(--maincolor);
+    font-weight:600;
+    font-size:16px;
+    position: absolute;
+    bottom:5px;
+    left:50%;
+    transform:translateX(-50%);
+    margin:10px 0;
+    transition:all .5s;
+}
+#check-wrap .check-list > div > a:hover{
+    background-color: var(--maincolor);
+    color:#fff;
+}
+
+/* 편의시설 안내 */
+#pethotel-wrap{
+    width:100%;
+    padding: 70px 13%;
+    box-sizing:border-box;
+}
+#pethotel-wrap .pet-facility{
+    width:100%;
+    height:600px;
+    display:flex;
+    flex-direction:row;
+    overflow:hidden;
+    border-radius:20px;
+}
+#pethotel-wrap .pet-facility.fade > div{
+    opacity:1;
+}
+#pethotel-wrap .pet-facility > div{
+    flex:1; 
+    transition:all 0.4s;
+    text-shadow:2px 2px 2px rgba(255,255,255,1);
+    text-align:center;
+    width:100%;
+    height:100%;
+    position: relative;
+    opacity:0;
+}
+#pethotel-wrap .pet-facility > div > a span{
+    text-align:center;
+    font-size:26px;
+    font-family:var(--korean);
+    font-weight:bold;
+    transition:all .5s;
+    color:#fff;
+    text-shadow:0px 0px 4px rgba(0,0,0,1);
+    position: absolute;
+    top:5%;
+    left:50%;
+    transform:translateX(-50%);
+}
+#pethotel-wrap .pet-facility > div > p{
+    display: block;
+    text-align:center;
+    font-size:18px;
+    font-family:var(--korean);
+    font-weight:500;
+    opacity:0;
+    position: absolute; 
+    padding:400px 10px;
+    width:100%; 
+    height:100%; 
+    left:50%;
+    transform:translateX(-50%);
+    box-sizing:border-box;
+    transition:all .3s;
+}
+#pethotel-wrap .pet-facility > div:hover{ flex:1.4; font-size:80px;}
+#pethotel-wrap .pet-facility > div:not(:hover){ flex:0.8;}
+#pethotel-wrap .pet-facility > div:nth-child(1){ background:url("../img/facility1.jpeg") no-repeat center / cover;}
+#pethotel-wrap .pet-facility > div:nth-child(2){ background:url("../img/facility2.jpg") no-repeat center / cover;}
+#pethotel-wrap .pet-facility > div:nth-child(3){ background:url("../img/facility3.jpg") no-repeat center / cover;}
+#pethotel-wrap .pet-facility > div:nth-child(4){ background:url("../img/facility4.jpeg") no-repeat center / cover;}
+#pethotel-wrap .pet-facility > div:hover a span{
+    font-size:35px;
+    top:30%;
+    z-index:2;
+    color:var(--maincolor);
+    text-shadow:0px 0px 4px rgba(255,255,255,1);
+}
+#pethotel-wrap .pet-facility > div:hover p{
+    opacity:1; 
+    background-color: rgba(255,255,255,0.7);
+    padding:300px 10px;
+}
+
+
+
+/* 예약 안내 */
+#reserv-wrap{
+    width:100%;
+    height:600px;
+    padding: 70px 13%;
+    box-sizing:border-box;
+    background-color: #fcf8eb;
+    position: relative;
+}
+#reserv-wrap > .reserv-cont{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding:50px 0 0 0;
+}
+#reserv-wrap > .reserv-cont.circleup > div{
+    transform:translateY(0);
+    opacity:1;
+}
+#reserv-wrap > .reserv-cont > div{
+    margin-right:5%;
+    background-color: var(--maincolor);
+    box-sizing:border-box;
+    width:141px;
+    height:141px;
+    border-radius:50%;
+    text-align:center;
+    line-height:140px;
+    font-size:16px;
+    color:#fff;
+    position: relative;
+    transform:translateY(30px);
+    opacity:0;
+    transition:all .5s;
+}
+#reserv-wrap > .reserv-cont > div:first-child{ transition-duration:0.2s; }
+#reserv-wrap > .reserv-cont > div:nth-child(2){ transition-duration:0.4s; }
+#reserv-wrap > .reserv-cont > div:nth-child(3){ transition-duration:0.6s; }
+#reserv-wrap > .reserv-cont > div:nth-child(4){ transition-duration:0.8s; }
+#reserv-wrap > .reserv-cont > div:nth-child(5){ transition-duration:1s; }
+#reserv-wrap > .reserv-cont > div:nth-child(6){ transition-duration:1.2s; }
+#reserv-wrap > .reserv-cont > div:nth-child(7){ transition-duration:1.4s; }
+#reserv-wrap > .reserv-cont > div:last-child{
+    transition-duration:1.6s;
+    margin:0;
+}
+#reserv-wrap > .reserv-cont > div:after{
+    content:"";
+    display:block;
+    width:10px;
+    height:2px;
+    background-color: var(--maincolor);
+    position: absolute;
+    top:50%;
+    left:123%;
+}
+#reserv-wrap > .reserv-cont > div:last-child:after{
+    display:none;
+}
+#reserv-wrap > a{
+    padding:10px 20px;
+    background-color: var(--maincolor);
+    border:3px solid #fff;
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    transition:all .5s;
+    margin:0 auto;
+    position: absolute;
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%);
+}
+#reserv-wrap > a:hover{
+    background-color: #fff;
+    color:var(--maincolor);
+    border:3px solid var(--maincolor);
+}
+
+/* 하단 이미지 */
+#bottom{
+    width:100%;
+    height:300px;
+    padding:0 13%;
+    box-sizing:border-box;
+    background: url("../img/bottom.jpg") no-repeat center/ cover;
+    background-attachment: fixed;
+}
+#bottom .bottom-ban{
+    color:#fff;
+    font-size:18px;
+    font-family:var(--korean);
+    padding:80px 0 0 0;
+}
+#bottom .bottom-ban span{
+    font-size:42px;
+    font-weight:bold;
+    font-style:italic;
+}

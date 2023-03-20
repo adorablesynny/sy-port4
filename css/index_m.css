@@ -1,0 +1,570 @@
+@media (max-width:1300px){
+
+    /* 비주얼 */
+    #visual-wrap{
+        height:550px;
+    }
+    #visual-wrap p{
+        top:120px;
+        left:10%;
+    }
+    /* 동물병원 정보 */
+    #info-wrap{
+        height:300px;
+        padding:0 10%;
+    }
+    #info-wrap .info-left > .decoimg{
+        background-size: 100%;
+    }
+    #info-wrap .info-left > .decoimg:hover{
+        transform:none;
+    }
+    #info-wrap .info-left .infos{
+        padding:10px 20px;
+    }
+    #info-wrap .info-left .infos .tel p{
+        font-size:30px;
+    }
+    #info-wrap .info-left .infos .kakaotalk p{
+        padding:3px 10px;
+        font-size:19px;
+    }
+    #info-wrap .info-left .infos .day p, #info-wrap .info-left .infos .night p{
+        display: block;
+        color:#fff;
+        font-size:16px;
+        padding:0;
+        margin:20px 0 0 20px;
+        background: none;
+        line-height:23px;
+        font-family:var(--korean);
+    }
+    #info-wrap .info-left .infos span{
+        font-size:13px;
+        padding:20px;
+    }
+    #info-wrap .info-right ul{
+        height:100%;
+    }
+    #info-wrap .info-right ul li{
+        display: block;
+        float:left;
+        width:50%;
+        height:50%;
+        box-sizing:border-box;
+        text-align:center;
+        position: relative;
+    }
+    #info-wrap .info-right ul li a{
+        font-size:16px;
+    }
+    #info-wrap .info-right ul li a i{
+        font-size:60px;
+        padding:30px 0 20px 0;
+    }
+    /* 동물병원 안내*/
+    #hospital-wrap{
+        padding:50px 10%;
+    }
+    #hospital-wrap .hospital-right{
+        margin-left:-0.5px;
+    }
+    /* 진료 안내 */
+    #check-wrap{
+        padding:50px 10%;
+    }
+    #check-wrap .check-list{
+        display:flex;
+        flex-direction:column;
+        width: 100%;
+        height: auto;
+    }
+    #check-wrap .check-list > div{
+        width:100%;
+        height:160px;
+        padding:20px 30px;
+        margin:0 0 1% 0;
+        box-sizing:border-box;
+    }
+    #check-wrap .check-list > div > div.check-photo{
+        margin:0;
+        width:120px;
+        height:120px;
+    }
+    #check-wrap .check-list > div > p{
+        position: absolute;
+        top:50%;
+        left:170px;
+        transform:translateY(-50%);
+        font-size:18px;
+    }
+    #check-wrap .check-list > div > span{
+        display:block;
+        width:50%;
+        height:auto;
+        position: absolute;
+        font-size:16px;
+        top:20px;
+        right:40px;
+        line-height:29px;
+        padding:0 40px 30px 0;
+    }
+    #check-wrap .check-list > div > a{
+        padding:3px 10px;
+        font-weight:600;
+        font-size:12px;
+        bottom:47%;
+        left:92%;
+        transform:translateY(50%);
+    }
+    #check-wrap .check-list > div> p strong{
+        display:block;
+    }
+    /* 편의시설 안내 */
+    #pethotel-wrap{
+        padding:50px 10%;
+    }
+    #pethotel-wrap .pet-facility > div > a span{
+        font-size:19px;
+    }
+    #pethotel-wrap .pet-facility > div > p{
+        font-size:16px;
+    }
+    #pethotel-wrap .pet-facility > div:hover a span{
+        font-size:23px;
+    }
+    /* 예약 안내 */
+    #reserv-wrap{
+        height:500px;
+        padding:50px 10%;
+    }
+    #reserv-wrap > .reserv-cont{
+        padding:30px 0 0 0;
+    }
+    #reserv-wrap > .reserv-cont > div{
+        width:100px;
+        height:100px;
+        line-height:100px;
+    }
+}
+
+
+@media (max-width:1023px){
+    /* 비주얼 */
+    #visual-wrap{
+        height:500px;
+    }
+    #visual-wrap p{
+        top:120px;
+        left:30px;
+        font-size:16px;
+    }
+    #visual-wrap p span{
+        font-size:16px;
+        padding:8px 0px;
+    }
+    #visual-wrap p em{
+        font-size:18px;
+    }
+
+    /* 동물병원 정보 */
+    #info-wrap{
+        height:300px;
+        padding:0 10px;
+    }
+    #info-wrap .info-left .infos{
+        padding:10px 0 0 0;
+        margin-left:30px;
+    }
+    #info-wrap .info-left .infos .tel p{
+        font-size:30px;
+    }
+    #info-wrap .info-left .infos .kakaotalk p{
+        padding:3px 10px;
+        font-size:19px;
+    }
+    #info-wrap .info-left .infos .day p, #info-wrap .info-left .infos .night p{
+        display: block;
+        color:#fff;
+        font-size:16px;
+        padding:0;
+        margin:20px 0 0 20px;
+        background: none;
+        line-height:23px;
+        font-family:var(--korean);
+    }
+    #info-wrap .info-left .infos span{
+        font-size:13px;
+        padding:20px;
+    }
+    #info-wrap .info-right ul{
+        height:100%;
+    }
+    #info-wrap .info-right ul li{
+        display: block;
+        float:left;
+        width:50%;
+        height:50%;
+        box-sizing:border-box;
+        text-align:center;
+        position: relative;
+    }
+    #info-wrap .info-right ul li a{
+        font-size:16px;
+    }
+    #info-wrap .info-right ul li a i{
+        font-size:60px;
+        padding:30px 0 20px 0;
+    }
+    /* 동물병원 안내*/
+    #hospital-wrap{
+        padding:30px 10px;
+    }
+
+    #hospital-wrap .hospital-left .hospital2 img{
+        width:60px;
+        height:60px;
+        right:20px;
+        bottom:20px;
+    }
+    #hospital-wrap .hospital-right .hospital4 img{
+        width:50px;
+        height:60px;
+        right:20px;
+        bottom:20px;
+    }
+
+    #hospital-wrap .hospital-left strong, #hospital-wrap .hospital-right strong{
+        font-size:18px;
+    }
+    #hospital-wrap .hospital-left > div:hover a, #hospital-wrap .hospital-right > div:hover a{
+        font-size:15px;
+    }
+
+    /* 진료 안내 */
+    #check-wrap{
+        padding:30px 10px;
+    }
+    #check-wrap .check-list{
+        display:flex;
+        flex-direction:column;
+        width: 100%;
+        height: auto;
+    }
+    #check-wrap .check-list > div{
+        width:100%;
+        height:160px;
+        padding:20px 20px;
+        margin:0 0 20px 0;
+        box-sizing:border-box;
+        display: block;
+    }
+    #check-wrap .check-list > div > div.check-photo{
+        margin:0;
+        width:110px;
+        height:110px;
+        margin-top:4px;
+    }
+    #check-wrap .check-list > div > p{
+        left:145px;
+        font-size:16px;
+    }
+    #check-wrap .check-list > div > span{
+        display:block;
+        width:52%;
+        height:auto;
+        position: absolute;
+        top:19px;
+        right:30px;
+        line-height:26px;
+        padding:0 40px 30px 0;
+        font-size:15px;
+    }
+    #check-wrap .check-list > div > a{
+        padding:2px;
+        font-weight:600;
+        font-size:11px;
+        bottom:47%;
+        right:10px;
+        line-height:2;
+        text-align:center;
+        transform:translateY(50%);
+    }
+    /* 편의시설 안내 */
+    #pethotel-wrap{
+        padding:30px 10px;
+    }
+    #pethotel-wrap .pet-facility{
+        height:500px;
+    }
+    #pethotel-wrap .pet-facility > div:hover p{
+        padding:250px 10px;
+    }
+    #pethotel-wrap .pet-facility > div > a span{
+        font-size:18px;
+    }
+    /* 예약 안내 */
+    #reserv-wrap{
+        height:450px;
+        padding:30px 10px;
+    }
+    #reserv-wrap > .reserv-cont{
+        padding:10px 0 0 0;
+    }
+    #reserv-wrap > .reserv-cont > div{
+        margin-right:1%;
+        width:100px;
+        height:100px;
+        line-height:100px;
+    }
+    #reserv-wrap > .reserv-cont > div:after{
+        display:none;
+    }
+}
+
+@media (max-width:708px){
+    /* 비주얼 */
+    #visual-wrap{
+        height:400px;
+    }
+    #visual-wrap p{
+        top:40%;
+        left:110px;
+        transform:translate(-50%);
+        font-size:0;
+        height:auto;
+    }
+    #visual-wrap p span{
+        font-size:21px;
+        margin-bottom:10px;
+        padding:5px 10px;
+    }
+    #visual-wrap p em{
+        font-size:20px;
+        text-shadow:0px 0px 3px rgba(0,0,0,0.5);
+    }
+    #visual-wrap p em:last-child{
+        font-size:0;
+    }
+    #visual-wrap .main-visual .visual-img{
+        background: url("../img/visual.jpg") no-repeat right -350px top -150px;
+        background-size: cover;
+        background-attachment:fixed;
+    }
+
+    /* 동물병원 정보 */
+    #info-wrap{
+        height:300px;
+        padding:0 10px;
+    }
+    #info-wrap .info-left{
+        width:60%;
+    }
+    #info-wrap .info-left .infos{
+        padding:10px 0 0 0;
+        margin-left:20px;
+        width:90%;
+        text-align:center;
+    }
+    #info-wrap .info-left > .decoimg{
+        display: none;
+    }
+    #info-wrap .info-left .infos .tel p{
+        font-size:30px;
+    }
+    #info-wrap .info-left .infos .kakaotalk p{
+        padding:3px 10px;
+        font-size:19px;
+    }
+    #info-wrap .info-left .infos .day p, #info-wrap .info-left .infos .night p{
+        display: block;
+        color:#fff;
+        font-size:16px;
+        padding:0;
+        margin:20px 0 0 20px;
+        background: none;
+        line-height:23px;
+        font-family:var(--korean);
+    }
+    #info-wrap .info-left .infos span{
+        font-size:13px;
+        padding:20px;
+    }
+    #info-wrap .info-right{
+        width:40%;
+    }
+    #info-wrap .info-right ul{
+        height:100%;
+    }
+    #info-wrap .info-right ul li{
+        display: block;
+        float:left;
+        width:50%;
+        height:50%;
+        box-sizing:border-box;
+        text-align:center;
+        position: relative;
+    }
+    #info-wrap .info-right ul li a{
+        font-size:16px;
+    }
+    #info-wrap .info-right ul li a i{
+        font-size:60px;
+        padding:30px 0 20px 0;
+    }
+    /* 동물병원 안내*/
+    #hospital-wrap{
+        padding:30px 10px;
+    }
+    #hospital-wrap .hospital-left > div,
+    #hospital-wrap .hospital-right > div{
+        padding:20px;
+    }
+
+    #hospital-wrap .hospital-left .hospital1{
+        height:300px;
+    }
+    #hospital-wrap .hospital-left .hospital2, 
+    #hospital-wrap .hospital-left .hospital3{
+        height:200px;
+    }
+    #hospital-wrap .hospital-left .hospital2 img,
+    #hospital-wrap .hospital-right .hospital4 img{
+        display: none;
+    }
+    #hospital-wrap .hospital-right .hospital4, 
+    #hospital-wrap .hospital-right .hospital5{
+        height:200px;
+    }
+
+    #hospital-wrap .hospital-right{
+        margin-left:0px;
+    }
+    #hospital-wrap .hospital-right .hospital6{
+        height:300px;
+    }
+
+    #hospital-wrap .hospital-left strong, #hospital-wrap .hospital-right strong{
+        font-size:18px;
+    }
+    #hospital-wrap .hospital-left > div:hover a, #hospital-wrap .hospital-right > div:hover a{
+        font-size:15px;
+    }
+    #hospital-wrap .hospital-left > div:hover strong, #hospital-wrap .hospital-right > div:hover strong{
+        font-size:21px;
+        font-weight:bold;
+    }
+
+    /* 진료 안내 */
+    #check-wrap{
+        padding:30px 10px;
+    }
+    #check-wrap .check-list{
+        display:flex;
+        flex-direction:column;
+        width: 100%;
+        height: auto;
+    }
+    #check-wrap .check-list > div{
+        width:100%;
+        height:130px;
+        padding:10px 20px;
+        margin:0 0 1% 0;
+        box-sizing:border-box;
+    }
+    #check-wrap .check-list > div > div.check-photo{
+        margin:0;
+        width:105px;
+        height:105px;
+    }
+    #check-wrap .check-list > div > p{
+        position: absolute;
+        top:10px;
+        left:250px;
+        transform:none;
+    }
+    #check-wrap .check-list > div > span{
+        display:block;
+        width:60%;
+        height:auto;
+        position: absolute;
+        top:50px;
+        right:56px;
+        line-height:29px;
+        padding:0 40px 30px 0;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        font-size:15px;
+    }
+    #check-wrap .check-list > div> p strong{
+        display:inline;
+    }
+    #check-wrap .check-list > div > a{
+        padding:3px 5px;
+        font-weight:600;
+        font-size:10px;
+        bottom:45%;
+        left:90%;
+        transform:translateY(50%);
+    }
+    /* 편의시설 안내 */
+    #pethotel-wrap{
+        padding:30px 10px;
+    }
+    #pethotel-wrap .pet-facility{
+        width:100%;
+        height:500px;
+        display:inline-block;
+    }
+    #pethotel-wrap .pet-facility > div{
+        float:left;
+        width:50%;
+        height:50%;
+    }
+    #pethotel-wrap .pet-facility > div:hover p{
+        padding:140px 5px;
+        font-size:13px;
+    }
+    /* 예약 안내 */
+    #reserv-wrap{
+        height:400px;
+        padding:30px 10px;
+    }
+    #reserv-wrap > .reserv-cont{
+        padding:10px 0 0 0;
+    }
+    #reserv-wrap > .reserv-cont > div{
+        margin-right:1%;
+        width:70px;
+        height:70px;
+        line-height:70px;
+        font-size:11px;
+    }
+    #reserv-wrap > a{
+        font-size:15px;
+    }
+    /* 하단 이미지 */
+    #bottom{
+        width:100%;
+        height:300px;
+        padding:0 10%;
+        box-sizing:border-box;
+        background: url("../img/bottom.jpg") no-repeat center/ cover;
+        background-attachment: fixed;
+    }
+    #bottom .bottom-ban{
+        color:#fff;
+        font-size:15px;
+        font-family:var(--korean);
+        padding:30px 0 0 0;
+    }
+    #bottom .bottom-ban span{
+        display: inline-block;
+        width:50%;
+        font-size:36px;
+        font-weight:bold;
+        font-style:italic;
+        padding:0 0 10px 0;
+    }
+}
