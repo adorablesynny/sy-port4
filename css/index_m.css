@@ -1,5 +1,41 @@
 @media (max-width:1300px){
-
+    /* 헤더*/ 
+    header{
+        height:80px;
+    }
+    header > a{
+        top:23px;
+        left:5%;
+        width:250px;
+        height:57px;
+    }
+    header > a > img:first-child{
+        display:none;
+    }
+    header > a > img:last-child{
+        display:block;
+        margin:0;
+    }
+    header .topmenu ul{
+        right:10%;
+    }
+    header nav.lnb{
+        right:5%;    
+    }
+    header nav.lnb > ul > li{
+        padding:0px 20px 5px;
+        height:60px;
+        margin-top:20px;
+    }
+    header nav.lnb > ul > li > a{
+        line-height:60px;
+    }
+    header nav.lnb > ul > li > ul{
+        top:81px;
+    }
+    header nav.lnb > ul > li > ul > li{
+        padding:11px 30px;
+    }
     /* 비주얼 */
     #visual-wrap{
         height:550px;
@@ -105,7 +141,7 @@
         position: absolute;
         font-size:16px;
         top:20px;
-        right:40px;
+        right:11%;
         line-height:29px;
         padding:0 40px 30px 0;
     }
@@ -146,10 +182,50 @@
         height:100px;
         line-height:100px;
     }
+    /* 푸터 */
+    footer .footer-top{
+        padding:5px 10%;
+    }
+
 }
 
 
 @media (max-width:1023px){
+    h2{
+        padding:0 0 60px 0;
+    }
+    .big-desc{
+        margin:-20px 0 0 0;
+    }
+    /* 헤더*/ 
+    header{
+        height:80px;
+    }
+    header > a{
+        top:23px;
+        left:0px;
+        width:200px;
+        height:57px;
+    }
+    header > a > img:last-child{
+        width:150px;
+        height:50px;
+        display:block;
+    }
+    header .topmenu ul{
+        right:10px;
+    }
+    header nav.lnb{
+        right:0px;    
+    }
+    header nav.lnb > ul > li{
+        padding:0px 7px;
+        height:60px;
+        margin-top:20px;
+    }
+    header nav.lnb > ul > li > ul > li{
+        padding:11px 20px;
+    }
     /* 비주얼 */
     #visual-wrap{
         height:500px;
@@ -275,7 +351,7 @@
         height:auto;
         position: absolute;
         top:19px;
-        right:30px;
+        right:7%;
         line-height:26px;
         padding:0 40px 30px 0;
         font-size:15px;
@@ -318,11 +394,40 @@
         line-height:100px;
     }
     #reserv-wrap > .reserv-cont > div:after{
-        display:none;
+        left:112%;
+    }
+    /* 푸터 */
+    footer .footer-top{
+        padding:5px 10px;
     }
 }
 
 @media (max-width:708px){
+    h2{
+        font-size:25px;
+    }
+    h2:after{
+        top:55px;
+    }
+    .big-desc{
+        margin:-20px 0 0 0;
+    }
+    /* 헤더*/ 
+    header{
+        height:60px;
+    }
+    header > a{
+        padding:0;
+        width:220px;
+
+    }
+    header > a > img:last-child{
+        width:220px;
+        height:50px;
+        display:block;
+        margin-top:-3px;
+        margin:0;
+    }
     /* 비주얼 */
     #visual-wrap{
         height:400px;
@@ -541,6 +646,9 @@
         line-height:70px;
         font-size:11px;
     }
+    #reserv-wrap > .reserv-cont > div:after{
+        left:110%;
+    }
     #reserv-wrap > a{
         font-size:15px;
     }
@@ -566,5 +674,26 @@
         font-weight:bold;
         font-style:italic;
         padding:0 0 10px 0;
+    }
+    /* 푸터 */
+    footer .footer-top{
+        padding:3px 10px;
+    }
+    footer .footer-top > .option a{
+        padding:0 5px;
+    }
+    footer .footer-top > .option a:after{
+        left:-3px;
+    }
+    footer .footer-top > .animalprotect{
+        float:right;
+        background-color: #fff;
+        transition:all .3s;
+        margin-top:12px;
+        border-radius:0 30px 30px 0;
+    }
+    footer .footer-top > .animalprotect p{
+        display: block;
+        padding:5px 10px;
     }
 }
