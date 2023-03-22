@@ -145,6 +145,7 @@
     background-color: #fff;
     border-radius:40px;
     padding:10px 20px;
+    margin:0 10px;
     color:var(--maincolor);
     font-size:2rem;
     font-family:var(--english);
@@ -663,20 +664,6 @@
 #reserv-wrap > .reserv-cont > div:last-child{
     transition-duration:1.6s;
     margin:0;
-}
-#reserv-wrap > .reserv-cont > div:after{
-    content:"";
-    display:block;
-    width:10px;
-    height:2px;
-    background-color: var(--maincolor);
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translateX(670%);
-}
-#reserv-wrap > .reserv-cont > div:last-child:after{
-    display:none;
 }
 #reserv-wrap > a{
     padding:10px 20px;

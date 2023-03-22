@@ -393,9 +393,7 @@
         height:100px;
         line-height:100px;
     }
-    #reserv-wrap > .reserv-cont > div:after{
-        left:112%;
-    }
+
     /* 푸터 */
     footer .footer-top{
         padding:5px 10px;

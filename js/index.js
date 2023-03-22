@@ -17,7 +17,7 @@ function scrollProgress(){
         document.querySelector('#visual-wrap p').classList.add('textin');
     }
 
-    if( scrollTop >= info -200){
+    if( scrollTop >= info -300){
         document.querySelector('.info-left').classList.add('color');
     }
 
@@ -32,19 +32,10 @@ function scrollProgress(){
     if( scrollTop >= pethotel - 150 ){
         document.querySelector('.pet-facility').classList.add('fade');
     }
-    if( scrollTop >= reserve - 200){
+    if( scrollTop >= pethotel + 200){
         document.querySelector('.reserv-cont').classList.add('circleup');
     }
 }
 
 window.addEventListener("scroll",scrollProgress);
     
-
-
-
-
-
-/* 해야할 일 :
--  php, include 하기
-- 깃허브 
-*/
