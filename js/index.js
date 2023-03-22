@@ -17,7 +17,7 @@ function scrollProgress(){
         document.querySelector('#visual-wrap p').classList.add('textin');
     }
 
-    if( scrollTop >= info -300){
+    if( scrollTop >= info -400){
         document.querySelector('.info-left').classList.add('color');
     }
 
