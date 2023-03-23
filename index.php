@@ -29,7 +29,9 @@
         <div id="info-wrap">
             <h2 class="hide">보리 동물병원 인포메이션</h2>
             <div class="info-left clearfix">
-                <div class="decoimg"></div>
+                <div class="decoimg">
+                    <img src="img/bori.png" alt="강아지모델 보리 사진">
+                </div>
                 <div class="infos">
                     <div class="tel">
                         <p>031-123-1234</p>

@@ -120,10 +120,12 @@
     width:38%;
     height:100%;
     float:left;
-    background:url("../img/bori.png") no-repeat center top -19px;
-    background-size:100%;
-    background-position:fixed;
     margin:0 5% 0 0;
+}
+#info-wrap .info-left > .decoimg > img{
+    width:88%;
+    min-width:260px;
+    height:auto;
 }
 #info-wrap .info-left .infos{
     float:left;
@@ -144,8 +146,8 @@
 #info-wrap .info-left .infos .kakaotalk p{
     background-color: #fff;
     border-radius:40px;
-    padding:10px 20px;
-    margin:0 10px;
+    padding:10px 16px;
+    margin:0 3%;
     color:var(--maincolor);
     font-size:2rem;
     font-family:var(--english);
